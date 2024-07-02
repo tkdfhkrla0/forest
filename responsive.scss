@@ -1,0 +1,81 @@
+@media (max-width: 378px) {
+    .container{
+
+        .video-frame{
+            // border: 1px solid #000;
+            position: relative;
+            video{
+                position: absolute;
+                // width: 100%;
+                box-sizing: border-box;
+                // display: none;
+            }
+            &::before{
+                // display: none;
+            }
+        }
+        .img-frame{
+
+            img{
+                width: 100%;
+                height: 100vh;
+            }
+        }
+        header{
+            width: 80%;
+            // padding-top: 20px;
+            // border: 1px solid #000;
+            z-index: 10;
+            .logo{
+                margin-top: -20px;
+                img{
+                    width: 80px;
+                }
+            }
+            .trigger{
+                // border: 1px solid #000;
+                margin-top: -20px;
+                width: 40px;
+                span{
+
+                }
+            }
+            
+        }
+        .heading{
+            // border: 1px solid #fff;
+            width: 270px;
+            left: 50px;
+            top: 150px;
+            text-align: center;
+            h1{
+                font-size: 80px;
+            }
+            p{
+                text-align: center;
+                font-size: 24px;
+            }
+            span{
+                padding-top: 20px;
+                // border: 1px solid #fff;
+                display: block;
+            }
+        }
+        .forest{
+
+            img{
+                width: 200px;
+            }
+        }
+        .modal-gnb{
+
+            .gnb{
+                width: 200px;
+                // border: 1px solid #fff;
+                a{
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}

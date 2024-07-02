@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* montserrat raleway roboto 폰트*/
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hind+Siliguri:wght@300;400;500;600;700&family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Fontawesome 4.7 */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* Noto Sans KR 폰트 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+/* 모든폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hind+Siliguri:wght@300;400;500;600;700&family=Hind:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Monoton&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* XEION CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+/* Lato 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+/* Playfair 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* Open Sans 폰트*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* Black Han 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+/* IBM Plex Sans KR 폰트*/
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR&display=swap");
+/* Yeon Sung */
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR&family=Yeon+Sung&display=swap");
+/* 눈누 폰트 지마켓 */
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Default CSS */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.container .video-frame video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+}
+.container .video-frame::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: 30%;
+  z-index: -1;
+}
+.container .img-frame {
+  display: none;
+}
+.container header {
+  display: flex;
+  width: 1700px;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.container header .logo img {
+  width: 150px;
+}
+.container header .trigger {
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+.container header .trigger span {
+  border: 1px solid #fff;
+  width: 100%;
+  position: absolute;
+  transition: 0.5s;
+}
+.container header .trigger span:nth-child(1) {
+  top: 0;
+}
+.container header .trigger span:nth-child(2) {
+  top: 50%;
+}
+.container header .trigger span:nth-child(3) {
+  top: 100%;
+}
+.container header .trigger.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.container header .trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+.container header .trigger.active span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+.container .heading {
+  color: #fff;
+  width: 600px;
+  position: absolute;
+  left: 100px;
+  bottom: 100px;
+  animation: showing1 2s 1s linear;
+  animation-fill-mode: both;
+}
+.container .heading h1 {
+  font-family: "Yeon Sung", system-ui;
+  font-size: 8em;
+}
+.container .heading p {
+  font-family: "Yeon Sung", system-ui;
+  margin: 0;
+  font-size: 3em;
+}
+.container .heading span {
+  font-family: "Yeon Sung", system-ui;
+}
+.container .forest {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  animation: showing1 2s 1s linear;
+  animation-fill-mode: both;
+}
+.container .forest img {
+  width: 700px;
+}
+.container .modal-gnb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 80%;
+  z-index: 5;
+  display: none;
+}
+.container .modal-gnb .gnb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+.container .modal-gnb .gnb a {
+  display: block;
+  color: #fff;
+  font-size: 5em;
+  position: relative;
+}
+.container .modal-gnb .gnb a::after {
+  content: attr(data-alt);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: yellowgreen;
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .modal-gnb .gnb a:hover::after {
+  opacity: 1;
+}
+
+@keyframes showing1 {
+  0% {
+    margin-left: 100px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+@keyframes showing2 {
+  0% {
+    margin-right: 100px;
+    opacity: 0;
+  }
+  100% {
+    margin-right: 0;
+    opacity: 1;
+  }
+}

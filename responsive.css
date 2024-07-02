@@ -1,0 +1,53 @@
+@media (max-width: 378px) {
+  .container .video-frame {
+    position: relative;
+  }
+  .container .video-frame video {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  .container .img-frame img {
+    width: 100%;
+    height: 100vh;
+  }
+  .container header {
+    width: 80%;
+    z-index: 10;
+  }
+  .container header .logo {
+    margin-top: -20px;
+  }
+  .container header .logo img {
+    width: 80px;
+  }
+  .container header .trigger {
+    margin-top: -20px;
+    width: 40px;
+  }
+  .container .heading {
+    width: 270px;
+    left: 50px;
+    top: 150px;
+    text-align: center;
+  }
+  .container .heading h1 {
+    font-size: 80px;
+  }
+  .container .heading p {
+    text-align: center;
+    font-size: 24px;
+  }
+  .container .heading span {
+    padding-top: 20px;
+    display: block;
+  }
+  .container .forest img {
+    width: 200px;
+  }
+  .container .modal-gnb .gnb {
+    width: 200px;
+  }
+  .container .modal-gnb .gnb a {
+    font-size: 2em;
+  }
+}
